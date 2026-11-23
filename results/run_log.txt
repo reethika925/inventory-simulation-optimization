@@ -1,0 +1,50 @@
+[17:59:14] validation against Law & Kelton and the exact Markov-chain cost
+[17:59:18] screening sS: 12150 grid points x 200 reps
+[17:59:29]   exact cost surface for sS
+[17:59:57]   best (s,S)=(24,62) ; exact optimum (25, 62)
+[17:59:57] screening sQ: 12150 grid points x 200 reps
+[18:00:09]   exact cost surface for sQ
+[18:01:19]   best (s,Q)=(24,51) ; exact optimum (24, 51)
+[18:01:19] final CRN comparison (s,S)=(24,62) vs (s,Q)=(24,51): 10000 reps
+[18:01:21]   diff (s,Q)-(s,S) = 0.92 ± 0.03  p=0.00e+00
+[18:01:21] sensitivity setup_cost=8 sS
+[18:01:24] sensitivity setup_cost=8 sQ
+[18:01:27] sensitivity setup_cost=16 sS
+[18:01:30] sensitivity setup_cost=16 sQ
+[18:01:33] sensitivity setup_cost=32 sS
+[18:01:36] sensitivity setup_cost=32 sQ
+[18:01:39] sensitivity setup_cost=64 sS
+[18:01:42] sensitivity setup_cost=64 sQ
+[18:01:45] sensitivity setup_cost=128 sS
+[18:01:48] sensitivity setup_cost=128 sQ
+[18:01:52] sensitivity shortage_cost=1 sS
+[18:01:54] sensitivity shortage_cost=1 sQ
+[18:01:57] sensitivity shortage_cost=2 sS
+[18:02:01] sensitivity shortage_cost=2 sQ
+[18:02:04] sensitivity shortage_cost=5 sS
+[18:02:07] sensitivity shortage_cost=5 sQ
+[18:02:10] sensitivity shortage_cost=10 sS
+[18:02:13] sensitivity shortage_cost=10 sQ
+[18:02:16] sensitivity shortage_cost=20 sS
+[18:02:19] sensitivity shortage_cost=20 sQ
+[18:02:22] sensitivity holding_cost=0.5 sS
+[18:02:25] sensitivity holding_cost=0.5 sQ
+[18:02:28] sensitivity holding_cost=1 sS
+[18:02:30] sensitivity holding_cost=1 sQ
+[18:02:34] sensitivity holding_cost=2 sS
+[18:02:37] sensitivity holding_cost=2 sQ
+[18:02:40] sensitivity holding_cost=4 sS
+[18:02:43] sensitivity holding_cost=4 sQ
+[18:02:47] done
+wrote fig01_sample_paths
+wrote fig02_validation
+wrote fig03_cost_surfaces
+wrote fig04_cost_slices
+wrote fig05_top_candidates
+wrote fig06_cost_breakdown
+wrote fig07_crn_variance_reduction
+wrote fig08_ci_convergence
+wrote fig09_sensitivity
+wrote fig10_sim_vs_exact
+wrote fig11_optimal_parameters
+EXIT 0

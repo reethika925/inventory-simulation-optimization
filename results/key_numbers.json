@@ -1,0 +1,295 @@
+{
+  "grid_points_per_policy": 12150,
+  "design": {
+    "n_screen": 200,
+    "top_k": 20,
+    "n_reeval": 5000,
+    "n_final": 10000,
+    "n_validation": 5000,
+    "grid_sS": 12150,
+    "grid_sQ": 12150
+  },
+  "sS": {
+    "label": "(s,S)=(24,62)",
+    "mean": 118.13,
+    "hw": 0.07,
+    "sd": 3.32,
+    "ordering": 89.42,
+    "holding": 19.96,
+    "shortage": 8.75,
+    "exact": 118.08,
+    "best": [
+      24,
+      62
+    ],
+    "exact_optimum": [
+      25,
+      62
+    ],
+    "exact_optimum_cost": 118.076,
+    "exact_cost_of_choice": 118.078,
+    "optimality_gap": 0.002,
+    "n_indistinguishable": 6,
+    "corr": 0.9999901617741073,
+    "flat_within_1": [
+      54,
+      71
+    ],
+    "flat_within_0_25": [
+      58,
+      66
+    ]
+  },
+  "sQ": {
+    "label": "(s,Q)=(24,51)",
+    "mean": 119.05,
+    "hw": 0.07,
+    "sd": 3.42,
+    "ordering": 89.66,
+    "holding": 20.72,
+    "shortage": 8.67,
+    "exact": 119.0,
+    "best": [
+      24,
+      51
+    ],
+    "exact_optimum": [
+      24,
+      51
+    ],
+    "exact_optimum_cost": 119.001,
+    "exact_cost_of_choice": 119.001,
+    "optimality_gap": 0.0,
+    "n_indistinguishable": 10,
+    "corr": 0.9999992918112989,
+    "flat_within_1": [
+      43,
+      62
+    ],
+    "flat_within_0_25": [
+      47,
+      56
+    ]
+  },
+  "baseline": {
+    "label": "(s,S)=(20,40) baseline",
+    "mean": 124.84,
+    "hw": 0.08,
+    "sd": 4.19,
+    "ordering": 98.58,
+    "holding": 9.39,
+    "shortage": 16.88,
+    "exact": 124.79
+  },
+  "diff": {
+    "mean": 0.925,
+    "lo": 0.896,
+    "hi": 0.954,
+    "t": 62.3,
+    "p": 0.0,
+    "pct": 0.78
+  },
+  "crn": {
+    "var_ratio": 0.097,
+    "hw_crn": 0.029,
+    "hw_indep": 0.093,
+    "reps_factor": 10.2
+  },
+  "baseline_saving": 6.71,
+  "baseline_saving_pct": 5.4,
+  "validation": {
+    "n_in_ci": 9,
+    "n": 9,
+    "max_abs_z": 1.77,
+    "single_run_sd_range": [
+      2.1,
+      4.3
+    ]
+  },
+  "sensitivity": [
+    {
+      "parameter": "holding_cost",
+      "value": 0.5,
+      "gap": 0.42,
+      "sS": [
+        28,
+        78
+      ],
+      "sQ": [
+        28,
+        64
+      ]
+    },
+    {
+      "parameter": "holding_cost",
+      "value": 1.0,
+      "gap": 0.91,
+      "sS": [
+        24,
+        62
+      ],
+      "sQ": [
+        24,
+        50
+      ]
+    },
+    {
+      "parameter": "holding_cost",
+      "value": 2.0,
+      "gap": 1.8,
+      "sS": [
+        20,
+        46
+      ],
+      "sQ": [
+        20,
+        40
+      ]
+    },
+    {
+      "parameter": "holding_cost",
+      "value": 4.0,
+      "gap": 5.76,
+      "sS": [
+        16,
+        34
+      ],
+      "sQ": [
+        14,
+        38
+      ]
+    },
+    {
+      "parameter": "setup_cost",
+      "value": 8.0,
+      "gap": 3.19,
+      "sS": [
+        32,
+        44
+      ],
+      "sQ": [
+        30,
+        36
+      ]
+    },
+    {
+      "parameter": "setup_cost",
+      "value": 16.0,
+      "gap": 0.98,
+      "sS": [
+        28,
+        46
+      ],
+      "sQ": [
+        28,
+        38
+      ]
+    },
+    {
+      "parameter": "setup_cost",
+      "value": 32.0,
+      "gap": 0.88,
+      "sS": [
+        24,
+        62
+      ],
+      "sQ": [
+        24,
+        50
+      ]
+    },
+    {
+      "parameter": "setup_cost",
+      "value": 64.0,
+      "gap": 0.62,
+      "sS": [
+        20,
+        74
+      ],
+      "sQ": [
+        20,
+        68
+      ]
+    },
+    {
+      "parameter": "setup_cost",
+      "value": 128.0,
+      "gap": 0.52,
+      "sS": [
+        16,
+        94
+      ],
+      "sQ": [
+        16,
+        92
+      ]
+    },
+    {
+      "parameter": "shortage_cost",
+      "value": 1.0,
+      "gap": 0.72,
+      "sS": [
+        0,
+        46
+      ],
+      "sQ": [
+        -2,
+        62
+      ]
+    },
+    {
+      "parameter": "shortage_cost",
+      "value": 2.0,
+      "gap": 0.82,
+      "sS": [
+        12,
+        52
+      ],
+      "sQ": [
+        12,
+        56
+      ]
+    },
+    {
+      "parameter": "shortage_cost",
+      "value": 5.0,
+      "gap": 0.77,
+      "sS": [
+        24,
+        62
+      ],
+      "sQ": [
+        24,
+        52
+      ]
+    },
+    {
+      "parameter": "shortage_cost",
+      "value": 10.0,
+      "gap": 1.01,
+      "sS": [
+        32,
+        68
+      ],
+      "sQ": [
+        32,
+        48
+      ]
+    },
+    {
+      "parameter": "shortage_cost",
+      "value": 20.0,
+      "gap": 0.92,
+      "sS": [
+        38,
+        72
+      ],
+      "sQ": [
+        38,
+        46
+      ]
+    }
+  ],
+  "sensitivity_min_gap": 0.42,
+  "sensitivity_max_gap": 5.76
+}
