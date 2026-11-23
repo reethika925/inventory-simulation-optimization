@@ -2,7 +2,7 @@
 Run every experiment of the project and write tables to results/.
 
     python experiments/run_all.py            # full run (~5-10 min on a laptop)
-    python experiments/run_all.py --quick    # small smoke-test version
+    python experiments/run_all.py --quick    # small smoke test, written to results_quick/
 
 Random-number seed sets (each one an independent experiment):
     1  screening of the full (s,S) and (s,Q) grids          (CRN across all points)
@@ -84,6 +84,9 @@ def optimize_policy(params, policy, grid, n_screen, top_k, n_reeval, seed_screen
 
 
 def main(quick: bool):
+    global TABLES, DATA
+    res = ROOT / ("results_quick" if quick else "results")   # --quick never overwrites results/
+    TABLES, DATA = res / "tables", res / "data"
     TABLES.mkdir(parents=True, exist_ok=True)
     DATA.mkdir(parents=True, exist_ok=True)
     params = SystemParams()
@@ -218,7 +221,7 @@ def main(quick: bool):
         crow.append(dict(n=int(n), policy="difference", mean=d.mean, ci_hw=d.half_width))
     pd.DataFrame(crow).to_csv(TABLES / "ci_convergence.csv", index=False)
 
-    (ROOT / "results" / "summary.json").write_text(json.dumps(summary, indent=2, default=float))
+    (res / "summary.json").write_text(json.dumps(summary, indent=2, default=float))
     log("done")
 
 

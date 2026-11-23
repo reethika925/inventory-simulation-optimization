@@ -41,8 +41,8 @@ def main():
         out[pol]["flat_within_1"] = flat_range(df, s[pol]["best"][1], 1.0)
         out[pol]["flat_within_0_25"] = flat_range(df, s[pol]["best"][1], 0.25)
     f = s["final"]
-    out["diff"] = dict(mean=round(f["diff_sQ_minus_sS"], 3), lo=round(f["diff_ci"][0], 3),
-                       hi=round(f["diff_ci"][1], 3), t=round(f["t_stat"], 1), p=f["p_value"],
+    out["diff"] = dict(mean=round(f["diff_sQ_minus_sS"], 4), lo=round(f["diff_ci"][0], 4),
+                       hi=round(f["diff_ci"][1], 4), t=round(f["t_stat"], 1), p=f["p_value"],
                        pct=round(100 * f["diff_sQ_minus_sS"] / out["sS"]["mean"], 2))
     out["crn"] = dict(var_ratio=round(f["crn_variance_ratio"], 3),
                       hw_crn=round(f["crn_ci_half_width"], 3),

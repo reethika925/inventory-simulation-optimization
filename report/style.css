@@ -1,0 +1,10 @@
+body{font-family:"DejaVu Serif",Georgia,serif;max-width:800px;margin:0 auto;color:#14213d;line-height:1.5;font-size:11pt}
+h1.title{font-size:22pt;margin-bottom:0}.subtitle{font-size:13pt;color:#4a5568;margin-top:4px}
+p.author,p.date{color:#4a5568;margin:2px 0}
+h2{font-family:"DejaVu Sans",Arial,sans-serif;font-size:15pt;margin-top:26px;border-bottom:none}
+h3{font-family:"DejaVu Sans",Arial,sans-serif;font-size:12.5pt}
+table{border-collapse:collapse;margin:10px 0;font-size:9.5pt;font-family:"DejaVu Sans",Arial,sans-serif}
+th,td{border:1px solid #d5dbe3;padding:4px 7px;text-align:left}th{background:#e8eef6;color:#14213d;font-weight:bold}
+img{max-width:100%;display:block;margin:12px auto}
+figure{margin:12px 0}figcaption{font-size:9pt;color:#4a5568;text-align:center}
+code,pre{font-size:9pt;background:#f1f4f8}pre{padding:8px}
